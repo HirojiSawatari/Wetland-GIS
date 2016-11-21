@@ -1,0 +1,20 @@
+!table
+!version 300
+!charset Neutral
+
+Definition Table
+  Type NATIVE Charset "Neutral"
+  Fields 13
+    UserID Integer ;
+    S_TOPOERROR Integer ;
+    FIPS_CNTRY0 Char (4) ;
+    GMI_CNTRY1 Char (6) ;
+    CNTRY_NAME2 Char (80) ;
+    SOVEREIGN3 Char (80) ;
+    POP_CNTRY4 Integer ;
+    SQKM_CNTRY Decimal (18,13) ;
+    SQMI_CNTRY Decimal (18,13) ;
+    CURR_TYPE7 Char (32) ;
+    CURR_CODE8 Char (8) ;
+    LANDLOCKED9 Char (2) ;
+    COLOR_MAP10 Char (2) ;

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{883F1FE6-2BF2-4526-82FF-C46710F2FBEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>湿地GIS</RootNamespace>
+    <AssemblyName>湿地GIS</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>www.ico.la_35_300X300_1373727374.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Access, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.InfoPath, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="SuperMap.Analyst.AddressMatching">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Analyst.AddressMatching.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.NetworkAnalyst">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Analyst.NetworkAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.SpatialAnalyst">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Analyst.SpatialAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.TerrainAnalyst">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Analyst.TerrainAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Analyst.TrafficAnalyst">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Analyst.TrafficAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Chart">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Chart.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86" />
+    <Reference Include="SuperMap.Data.Conversion, Version=6.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86" />
+    <Reference Include="SuperMap.Data.Processing">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Data.Processing.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Data.Topology">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Data.Topology.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Layout">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\bin\SuperMap.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Mapping">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\bin\SuperMap.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace, Version=6.0.0.0, Culture=neutral, PublicKeyToken=0635c574ea890381, processorArchitecture=x86" />
+    <Reference Include="SuperMap.Realspace.NetworkAnalyst">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Realspace.NetworkAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.Realspace.SpatialAnalyst">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\Bin\SuperMap.Realspace.SpatialAnalyst.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperMap.UI.Controls">
+      <HintPath>D:\SuperMap\SuperMap Objects .NET 6R\bin\SuperMap.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C_conn.cs" />
+    <Compile Include="主界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="主界面.Designer.cs">
+      <DependentUpon>主界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湿地类型面积统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湿地类型面积统计.Designer.cs">
+      <DependentUpon>湿地类型面积统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湿地转移概率统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湿地转移概率统计.Designer.cs">
+      <DependentUpon>湿地转移概率统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湿地预测数据.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湿地预测数据.Designer.cs">
+      <DependentUpon>湿地预测数据.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湿地类型变化统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湿地类型变化统计.Designer.cs">
+      <DependentUpon>湿地类型变化统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LNNU_GISDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LNNU_GISDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="求交.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="求交.Designer.cs">
+      <DependentUpon>求交.cs</DependentUpon>
+    </Compile>
+    <Compile Include="擦除.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="擦除.Designer.cs">
+      <DependentUpon>擦除.cs</DependentUpon>
+    </Compile>
+    <Compile Include="湿地评价向导.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="湿地评价向导.Designer.cs">
+      <DependentUpon>湿地评价向导.cs</DependentUpon>
+    </Compile>
+    <Compile Include="裁剪.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="裁剪.Designer.cs">
+      <DependentUpon>裁剪.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleRun1.cs" />
+    <Compile Include="打印.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="打印.Designer.cs">
+      <DependentUpon>打印.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据集管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据集管理.Designer.cs">
+      <DependentUpon>数据集管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="条件查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="条件查询.Designer.cs">
+      <DependentUpon>条件查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="马尔科夫模型.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="马尔科夫模型.Designer.cs">
+      <DependentUpon>马尔科夫模型.cs</DependentUpon>
+    </Compile>
+    <Compile Include="字段计算.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="字段计算.Designer.cs">
+      <DependentUpon>字段计算.cs</DependentUpon>
+    </Compile>
+    <Compile Include="属性筛选.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="属性筛选.Designer.cs">
+      <DependentUpon>属性筛选.cs</DependentUpon>
+    </Compile>
+    <Compile Include="合并.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="合并.Designer.cs">
+      <DependentUpon>合并.cs</DependentUpon>
+    </Compile>
+    <Compile Include="转为SIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="转为SIT.Designer.cs">
+      <DependentUpon>转为SIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="转为TAB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="转为TAB.Designer.cs">
+      <DependentUpon>转为TAB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="转为SHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="转为SHP.Designer.cs">
+      <DependentUpon>转为SHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleRun.cs" />
+    <Compile Include="图查属性.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="图查属性.Designer.cs">
+      <DependentUpon>图查属性.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户登录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户登录.Designer.cs">
+      <DependentUpon>用户登录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="加载界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="加载界面.Designer.cs">
+      <DependentUpon>加载界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="主界面.resx">
+      <DependentUpon>主界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湿地类型面积统计.resx">
+      <DependentUpon>湿地类型面积统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湿地转移概率统计.resx">
+      <DependentUpon>湿地转移概率统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湿地预测数据.resx">
+      <DependentUpon>湿地预测数据.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湿地类型变化统计.resx">
+      <DependentUpon>湿地类型变化统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="求交.resx">
+      <DependentUpon>求交.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="擦除.resx">
+      <DependentUpon>擦除.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="湿地评价向导.resx">
+      <DependentUpon>湿地评价向导.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="裁剪.resx">
+      <DependentUpon>裁剪.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="打印.resx">
+      <DependentUpon>打印.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据集管理.resx">
+      <DependentUpon>数据集管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="条件查询.resx">
+      <DependentUpon>条件查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="马尔科夫模型.resx">
+      <DependentUpon>马尔科夫模型.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="字段计算.resx">
+      <DependentUpon>字段计算.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="属性筛选.resx">
+      <DependentUpon>属性筛选.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="合并.resx">
+      <DependentUpon>合并.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="转为SIT.resx">
+      <DependentUpon>转为SIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="转为TAB.resx">
+      <DependentUpon>转为TAB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="转为SHP.resx">
+      <DependentUpon>转为SHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="图查属性.resx">
+      <DependentUpon>图查属性.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户登录.resx">
+      <DependentUpon>用户登录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="加载界面.resx">
+      <DependentUpon>加载界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="LNNU_GISDataSet.xsc">
+      <DependentUpon>LNNU_GISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LNNU_GISDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LNNU_GISDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LNNU_GISDataSet.xss">
+      <DependentUpon>LNNU_GISDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LNNU_GIS.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www.ico.la_35_300X300_1373727374.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxOWC11">
+      <Guid>{0002E558-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSComctlLib">
+      <Guid>{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="OWC11">
+      <Guid>{0002E558-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

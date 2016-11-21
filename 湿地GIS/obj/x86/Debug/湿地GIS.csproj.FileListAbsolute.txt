@@ -1,0 +1,265 @@
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\湿地GIS.pdb
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.加载界面.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Properties.Resources.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.exe
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.pdb
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.用户登录.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe.config
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Layout.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Mapping.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.UI.Controls.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Layout.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Mapping.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.UI.Controls.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.图查属性.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.NetworkAnalyst.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.SpatialAnalyst.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.NetworkAnalyst.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.SpatialAnalyst.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SHP.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为TAB.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SIT.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.AddressMatching.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.NetworkAnalyst.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.SpatialAnalyst.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TerrainAnalyst.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TrafficAnalyst.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Chart.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Processing.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Topology.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.AddressMatching.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.NetworkAnalyst.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.SpatialAnalyst.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TerrainAnalyst.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TrafficAnalyst.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Chart.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Processing.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Topology.xml
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.马尔科夫模型.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.字段计算.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.条件查询.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.打印.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.数据集管理.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.合并.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.裁剪.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.擦除.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.求交.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe.config
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.exe
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.pdb
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\bin\Debug\湿地GIS.pdb
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form3.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型面积统计.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.求交.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.擦除.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.裁剪.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.打印.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.数据集管理.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.条件查询.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.马尔科夫模型.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.字段计算.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.属性查询.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.合并.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SIT.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为TAB.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SHP.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.图查属性.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.用户登录.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.加载界面.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Properties.Resources.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\AxInterop.OWC11.dll
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.csproj.ResolveComReference.cache
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\bin\Debug\AxInterop.OWC11.dll
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\bin\Debug\LNNU_GIS.mdb
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form5.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form6.resources
+C:\Users\asus-pc\Desktop\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form7.resources
+M:\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe.config
+M:\湿地GIS\湿地GIS\obj\x86\Debug\AxInterop.OWC11.dll
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.csproj.ResolveComReference.cache
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.exe
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.pdb
+M:\湿地GIS\湿地GIS\obj\x86\Debug\ResolveAssemblyReference.cache
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form3.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型面积统计.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form5.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form6.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Form7.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.求交.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.擦除.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.裁剪.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.打印.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.数据集管理.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.条件查询.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.马尔科夫模型.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.字段计算.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.属性查询.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.合并.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SIT.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为TAB.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SHP.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.图查属性.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.用户登录.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.加载界面.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Properties.Resources.resources
+M:\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+M:\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+M:\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+M:\湿地GIS\湿地GIS\bin\Debug\LNNU_GIS.mdb
+M:\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe
+M:\湿地GIS\湿地GIS\bin\Debug\湿地GIS.pdb
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.AddressMatching.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.NetworkAnalyst.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.SpatialAnalyst.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TerrainAnalyst.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TrafficAnalyst.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Chart.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Processing.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Topology.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Layout.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Mapping.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.NetworkAnalyst.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.SpatialAnalyst.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.UI.Controls.dll
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.AddressMatching.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.NetworkAnalyst.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.SpatialAnalyst.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TerrainAnalyst.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TrafficAnalyst.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Chart.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Processing.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Topology.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Layout.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Mapping.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.NetworkAnalyst.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.SpatialAnalyst.xml
+M:\湿地GIS\湿地GIS\bin\Debug\SuperMap.UI.Controls.xml
+M:\湿地GIS\湿地GIS\bin\Debug\AxInterop.OWC11.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\AxInterop.OWC11.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.csproj.ResolveComReference.cache
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\LNNU_GIS.mdb
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\bin\Debug\AxInterop.OWC11.dll
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型面积统计.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.主界面.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地转移概率统计.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地预测数据.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型变化统计.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地评价向导.resources
+C:\Users\Sawatari\Documents\Visual Studio 2010\Projects\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.属性筛选.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe.config
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\AxInterop.OWC11.dll
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.exe
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.pdb
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.主界面.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型面积统计.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地转移概率统计.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地预测数据.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型变化统计.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.求交.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.擦除.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.湿地评价向导.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.裁剪.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.打印.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.数据集管理.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.条件查询.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.马尔科夫模型.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.字段计算.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.属性筛选.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.合并.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SIT.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为TAB.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.转为SHP.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.图查属性.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.用户登录.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.加载界面.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\湿地GIS.Properties.Resources.resources
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\LNNU_GIS.mdb
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\湿地GIS.exe
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\湿地GIS.pdb
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\Microsoft.Office.Interop.Access.dll
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\Microsoft.Office.Interop.Access.Dao.dll
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.AddressMatching.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.NetworkAnalyst.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.SpatialAnalyst.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TerrainAnalyst.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Analyst.TrafficAnalyst.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Chart.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Processing.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Data.Topology.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Layout.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Mapping.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.NetworkAnalyst.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.Realspace.SpatialAnalyst.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\SuperMap.UI.Controls.xml
+C:\Documents and Settings\Administrator\桌面\湿地GIS\湿地GIS\bin\Debug\AxInterop.OWC11.dll
+J:\湿地GIS1\湿地GIS\bin\Debug\湿地GIS.exe.config
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\AxInterop.OWC11.dll
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.csproj.ResolveComReference.cache
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.exe
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.pdb
+J:\湿地GIS1\湿地GIS\bin\Debug\LNNU_GIS.mdb
+J:\湿地GIS1\湿地GIS\bin\Debug\湿地GIS.exe
+J:\湿地GIS1\湿地GIS\bin\Debug\湿地GIS.pdb
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Analyst.AddressMatching.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Analyst.NetworkAnalyst.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Analyst.SpatialAnalyst.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Analyst.TerrainAnalyst.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Analyst.TrafficAnalyst.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Chart.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Data.Processing.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Data.Topology.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Layout.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Mapping.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Realspace.NetworkAnalyst.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.Realspace.SpatialAnalyst.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\SuperMap.UI.Controls.xml
+J:\湿地GIS1\湿地GIS\bin\Debug\AxInterop.OWC11.dll
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.主界面.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型面积统计.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.湿地转移概率统计.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.湿地预测数据.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.湿地类型变化统计.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.求交.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.擦除.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.湿地评价向导.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.裁剪.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.打印.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.数据集管理.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.条件查询.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.马尔科夫模型.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.字段计算.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.属性筛选.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.合并.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.转为SIT.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.转为TAB.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.转为SHP.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.图查属性.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.用户登录.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.加载界面.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\湿地GIS.Properties.Resources.resources
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+J:\湿地GIS1\湿地GIS\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+F:\作业\11B_2788-组件开发组-辽宁师范大学\参赛作品\软件源程序\湿地GIS\bin\Debug\湿地GIS.exe.config
+F:\作业\11B_2788-组件开发组-辽宁师范大学\参赛作品\软件源程序\湿地GIS\obj\x86\Debug\AxInterop.OWC11.dll
+F:\作业\11B_2788-组件开发组-辽宁师范大学\参赛作品\软件源程序\湿地GIS\obj\x86\Debug\湿地GIS.csproj.ResolveComReference.cache
+F:\作业\11B_2788-组件开发组-辽宁师范大学\参赛作品\软件源程序\湿地GIS\obj\x86\Debug\湿地GIS.exe
+F:\作业\11B_2788-组件开发组-辽宁师范大学\参赛作品\软件源程序\湿地GIS\obj\x86\Debug\湿地GIS.pdb

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>SuperMap.Realspace.SpatialAnalyst</name>
+  </assembly>
+  <members>
+    <member name="T:SuperMap.Realspace.SpatialAnalyst.BarrierPoint3D">
+      <summary>
+        <para>障碍点对象类。</para>
+        <para>障碍点指的是阻挡观察点到目标点视线的点。</para>
+      </summary>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.BarrierPoint3D.BarrierID">
+      <summary>
+            获取障碍模型对象的ID。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.BarrierPoint3D.LayerName">
+      <summary>
+            获取障碍点所属图层名。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.BarrierPoint3D.IntersectionPoint">
+      <summary>
+            获取障碍点坐标。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Realspace.SpatialAnalyst.VisibilityAnalyst3D">
+      <summary>
+             三维可视分析类。三维可视分析包括通视分析和可视域分析，前者用于判断两点间是否通视，后者用于对观察点的可视范围进行分析。
+             </summary>
+    </member>
+    <member name="M:SuperMap.Realspace.SpatialAnalyst.VisibilityAnalyst3D.IsVisible(SuperMap.Data.Point3D,SuperMap.Data.Point3D)">
+      <summary>
+             根据指定的观察点和目标点，来进行通视性分析。
+             </summary>
+      <param name="viewPoint">指定的观察点对象。</param>
+      <param name="targetPoint">指定的目标点对象。</param>
+      <returns>返回通视分析结果类对象。</returns>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.VisibilityAnalyst3D.Scene">
+      <summary>
+            获取或设置待分析的场景对象。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Realspace.SpatialAnalyst.GridMatchAnalyst">
+      <summary>
+            地形模型匹配类。用于使 DEM 地形数据与三维模型贴合。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Realspace.SpatialAnalyst.GridMatchAnalyst.GridMatch(SuperMap.Data.DatasetGrid,SuperMap.Data.DatasetVector,SuperMap.Data.Datasource,System.String,System.String,System.Double,System.Double)">
+      <summary>
+            地形模型匹配，根据模型的高程对 DEM 地形进行修改（填挖）使之与模型贴合。
+            </summary>
+      <param name="sourceDatasetGrid">指定的与三维模型进行匹配的地形数据，即 DEM 栅格数据。</param>
+      <param name="sourceDatasetVector">指定的模型数据。可以是 CAD 数据集或面数据集。</param>
+      <param name="targetDatasource">指定的用于存储结果数据集的数据源。</param>
+      <param name="targetDatasetName">指定的结果数据集的名称。</param>
+      <param name="altiFieldName">指定的模型数据的高程字段。详细说明见备注部分。</param>
+      <param name="radius">指定的过渡区域的半径，单位为米。半径的起点为模型对应地形的边缘，对该过渡地带的地形进行平滑过渡处理。有效值范围为大于等于0，设置为0表示不进行平滑过渡处理。</param>
+      <param name="exp">指定的幂次。取值范围为大于等于0。设置为负数会抛出异常。为0使表示不对模型周围的缓冲地带进行平滑过渡。建议范围为(0,3]。</param>
+      <returns>根据模型进行匹配后的 DEM 数据集。</returns>
+    </member>
+    <member name="E:SuperMap.Realspace.SpatialAnalyst.GridMatchAnalyst.Stepped">
+      <summary>
+            启动进度条时触发该事件。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Realspace.SpatialAnalyst.VisibleResult3D">
+      <summary>
+        <para>通视分析结果类。该类是通视分析的结果返回类型，包含了通视分析的点信息、通视结果以及通视线对象。</para>
+      </summary>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.VisibleResult3D.PointView">
+      <summary>
+            获取观察点对象。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.VisibleResult3D.PointTarget">
+      <summary>
+            获取目标点对象。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.VisibleResult3D.Visible">
+      <summary>
+            获取观察点与目标点是否通视。
+            </summary>
+      <returns>True表示两点间通视，False表示两点间不通视。</returns>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.VisibleResult3D.LineVisible">
+      <summary>
+            获取通视线对象。
+            </summary>
+      <return>获取到的通视线对象，其类型为三维线对象（GeoLine3D）。</return>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.VisibleResult3D.LineInvisible">
+      <summary>
+            获取不通视线。
+            </summary>
+      <return>获取到的不通视线对象，其类型为三维线对象（GeoLine3D）。</return>
+    </member>
+    <member name="P:SuperMap.Realspace.SpatialAnalyst.VisibleResult3D.BarrierPoint3Ds">
+      <summary>
+            获取障碍点对象集合。
+            </summary>
+    </member>
+  </members>
+</doc>

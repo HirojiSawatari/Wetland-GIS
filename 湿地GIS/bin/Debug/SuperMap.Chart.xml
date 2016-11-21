@@ -1,0 +1,1480 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>SuperMap.Chart</name>
+  </assembly>
+  <members>
+    <member name="T:SuperMap.Chart.Conversion.FileTypeChart">
+      <summary>
+            该类定义了海图数据转换文件的类型常量。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.Conversion.FileTypeChart.None">
+      <summary>
+            未知数据格式。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.Conversion.FileTypeChart.S57">
+      <summary>
+            S-57 海图格式，000文件。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ImportSettingChartS57">
+      <summary>
+            S-57 格式海图数据导入设置信息类。该类继承自<see cref="T:SuperMap.Chart.Conversion.ImportSettingChart"> ImportSettingChart </see>类。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ImportSettingChart">
+      <summary>
+            海图格式数据导入设置信息类。该类各种海图数据类型导入设置的基类，提供导入设置的公共属性和方法。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingChart.#ctor">
+      <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.ImportSettingChart">ImportSettingChart</see>  对象。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingChart.Finalize">
+      <summary>
+            在通过垃圾回收将 ImportSettingChart 回收之前，释放非托管资源并执行其他清理操作。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingChart.Dispose">
+      <summary>
+            释放对象所占用的资源。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChart.SourceFilePath">
+      <summary>
+            获取或设置需要导入的海图数据文件的路径。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChart.SourceFileType">
+      <summary>
+            获取需要导入的海图数据的类型。
+            </summary>
+      <value>默认值为<see cref="F:SuperMap.Chart.Conversion.FileTypeChart.None"> FileTypeChart.None </see>。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChart.TargetEncodeType">
+      <summary>
+            获取或设置要生成的数据集的编码类型。
+            </summary>
+      <value>默认值为源数据中的编码类型。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChart.TargetDatasourceConnectionInfo">
+      <summary>
+            获取或设置目标数据源连接信息。如果没有对应的数据源，则根据设置的连接信息新建。
+            </summary>
+      <value>默认值为 null。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChart.TargetDatasource">
+      <summary>
+            获取或设置需要导入的目标数据源对象。
+            </summary>
+      <value>默认值为 null。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChart.ConvertToMercator">
+      <summary>
+            设置或获取是否将导入的数据转为墨卡托投影坐标系。
+            </summary>
+      <value>默认值为 false。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChart.TargetDatasetGroup">
+      <summary>
+            获取或设置目标数据集分组信息。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingChartS57.#ctor">
+      <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.ImportSettingChartS57">ImportSettingChartS57</see> 对象。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChartS57.SpatialIndex">
+      <summary>
+            获取或设置空间索引信息。
+            </summary>
+      <value>默认值为null，表示空间索引信息为空。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingChartS57.IsImportUpdates">
+      <summary>
+            获取或设置在导入 000 格式文件时是否同时导入更新数据（001，002，……格式文件）。
+            </summary>
+      <value>默认值为 true，表示导入更新数据。</value>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ExportResultChart">
+      <summary>
+            海图数据导出结果类。该类提供 <see cref="P:SuperMap.Chart.Conversion.ExportResultChart.SucceedSettings">SucceedSettings</see> 和 <see cref="P:SuperMap.Chart.Conversion.ExportResultChart.FailedSettings">FailedSettings</see> 两种方法，用以查看成功和失败的任务。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportResultChart.SucceedSettings">
+      <summary>
+            获取导出成功的任务的 <see cref="T:SuperMap.Chart.Conversion.ExportSettingChart">ExportSettingChart</see> 集合。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportResultChart.FailedSettings">
+      <summary>
+            获取导出失败的任务的 <see cref="T:SuperMap.Chart.Conversion.ExportSettingChart">ExportSettingChart</see> 集合。用户可以通过失败任务的个数是否为0来判断导入是否全部成功。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.FeatureInfoSpec">
+      <summary>
+            产品规范物标信息类。用于描述各产品规范的物标的基本信息，包括物标的名称、类型及与该物标相关的属性等。例如，ENC 3.1 版本。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpec.Acronym">
+      <summary>
+            获取物标简称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpec.Name">
+      <summary>
+            获取物标名称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpec.LocalName">
+      <summary>
+            获取物标本地化名称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpec.Code">
+      <summary>
+            获取物标代码。
+            </summary>
+      <value>默认值为0。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpec.Primitive">
+      <summary>
+            获取物标可应用的对象类型。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpec.AttributeFields">
+      <summary>
+            获取物标的属性集合。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ImportResultChart">
+      <summary>
+            海图数据导入结果类。该类提供 <see cref="P:SuperMap.Chart.Conversion.ImportResultChart.SucceedSettings">SucceedSettings</see> 和 <see cref="P:SuperMap.Chart.Conversion.ImportResultChart.FailedSettings">FailedSettings</see> 两种方法，用以查看成功和失败的任务。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportResultChart.Finalize">
+      <summary>
+            在通过垃圾回收将 ImportResultChart 对象回收之前，释放非托管资源并执行其他清理操作。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportResultChart.Dispose">
+      <summary>
+            释放对象所占用的资源。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportResultChart.SucceedSettings">
+      <summary>
+            获取导入成功的任务的 <see cref="T:SuperMap.Chart.Conversion.ImportSettingChart">ImportSettingChart</see> 集合。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportResultChart.FailedSettings">
+      <summary>
+            获取导入失败的任务的 <see cref="T:SuperMap.Chart.Conversion.ImportSettingChart">ImportSettingChart</see> 集合。用户可以通过失败任务的个数是否为0来判断导入是否全部成功。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.FeatureTypeChart">
+      <summary>
+            该类定义了物标的类型常量。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.FeatureTypeChart.None">
+      <summary>
+            未知物标对象。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.FeatureTypeChart.Geo">
+      <summary>
+            地理物标对象（缩写为'G'）。表示包含客观世界实体的描述特征。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.FeatureTypeChart.Meta">
+      <summary>
+            元物标对象（缩写为'M'）。表示包含其他物标信息（例如编辑比例尺、垂直基准面）。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.FeatureTypeChart.Collection">
+      <summary>
+            集合物标对象（缩写为'C'）。表示描述与其他物标之间关系的信息。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.FeatureTypeChart.Cartographic">
+      <summary>
+            制图物标对象（缩写为'$'）。表示包 含客观世界实体的制图显示信息。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs">
+      <summary>
+            转换进度条事件参数类。该类为导入海图数据进度条相关事件提供数据。 
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.#ctor(System.String,System.String,System.Int32,System.Int32,SuperMap.Chart.Conversion.ImportSettingChart,System.Int32,System.Boolean)">
+      <summary>
+            根据给定的参数对象初始化转换进度条事件类的新实例。 
+            </summary>
+      <param name="title">当前进度条的标题。</param>
+      <param name="message">当前进度条的进度信息。</param>
+      <param name="percent">当前完成的总百分比。</param>
+      <param name="subPercent">当前进行的子项的完成百分比。</param>
+      <param name="currentTask">当前进行的子项信息。</param>
+      <param name="count">进行的任务的子项个数。</param>
+      <param name="cancel">是否取消所有导入的任务。</param>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.Title">
+      <summary>
+            获取当前进度条的标题。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.Message">
+      <summary>
+            获取当前进度条的进度信息。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.TotalPercent">
+      <summary>
+            获取当前的完成的总百分比。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.SubPercent">
+      <summary>
+            获取当前进行的子项完成的总百分比。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.CurrentTask">
+      <summary>
+            获取当前进行的子项信息，直接返回传入的 <see cref="T:SuperMap.Chart.Conversion.ImportSettingChart">ImportSettingChart</see>，由用户挑选需要使用的属性。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.Count">
+      <summary>
+            获取进行的任务的子项个数。 
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs.Cancel">
+      <summary>
+            获取或设置是否取消所有导入的任务。
+            </summary>
+      <value>一个布尔值，用于表示取消所有导入的任务是否成功，如果取消成功，则返回 true，否则返回　false。　</value>
+    </member>
+    <member name="T:SuperMap.Chart.ChartEnvironment">
+      <summary>
+            海图环境配置类。用于通过管理 ChartConfig.xml 配置文件，从而实现增加和删除显示风格、获取和设置字典文件路径等功能。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.Finalize">
+      <summary>
+            在通过垃圾回收将 ChartEnvironment 回收之前，释放非托管资源并执行其他清理操作。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.#ctor">
+      <summary>
+            构造一个新的 ChartEnvironment 对象。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.AddNewDisplayStyle(System.String,SuperMap.Chart.ChartDisplayStyleType)">
+      <summary>
+            在配置文件中增加一种新的显示风格。
+            </summary>
+      <param name="newDisplayStyleName">指定的新增显示风格的名称。</param>
+      <param name="displayStyleType">指定的显示风格。</param>
+      <returns>一个布尔值，如果成功返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.GetAreaLookupFile(System.String,System.Boolean)">
+      <summary>
+            根据指定的参数获取面对象风格查找表文件路径。
+            </summary>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <param name="isSymbolized">指定是否符号化边界。如果为 false，则获取不符号化边界的面对象风格查找表。</param>
+      <returns>获取到的面对象风格查找表文件路径。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.GetLineLookupFile(System.String)">
+      <summary>
+            通过指定显示风格的名称获取线对象风格查找表文件路径。
+            </summary>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <returns>获取到的线对象风格查找表文件路径。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.GetPointLookupFile(System.String,System.Boolean)">
+      <summary>
+            根据给定的参数获取点对象风格查找表文件路径。
+            </summary>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <param name="isSimplified">指定是否是简单符号，如果为 false，则获取的是传统海图点符号查找表文件。</param>
+      <returns>获取到的点对象风格查找表文件路径。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.GetColourTable(System.String,SuperMap.Chart.ColourModeChart)">
+      <summary>
+            根据给定的参数获取颜色表文件路径。
+            </summary>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <param name="colourMode">指定的颜色模式。</param>
+      <returns>获取到的颜色表文件路径。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.GetDisplayStyleNames">
+      <summary>
+            从配置文件中获取所有已设置的显示风格的名称。
+            </summary>
+      <returns>获取到的显示风格名称集合。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.GetDisplayStyleType(System.String)">
+      <summary>
+            通过指定显示风格的名称获取对应的显示风格类型。
+            </summary>
+      <param name="displayStyleName">指定的显示风格的名称。</param>
+      <returns>获取到的显示风格类型。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.RemoveDisplayStyle(System.String)">
+      <summary>
+            通过指定显示风格名称移除配置文件中对应的显示风格类型。
+            </summary>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <returns>一个布尔值，如果成功返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.SetAreaLookupFile(System.String,System.String,System.Boolean)">
+      <summary>
+            设置面对象风格查找表文件路径。
+            </summary>
+      <param name="source">指定的风格查找表文件路径。</param>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <param name="isSymbolized">指定是否符号化边界，如果为 false，则设置的是不符号化边界的面对象风格查找表。</param>
+      <returns>一个布尔值，如果成功返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.SetColourTable(System.String,System.String,SuperMap.Chart.ColourModeChart)">
+      <summary>
+            设置颜色表文件路径。
+            </summary>
+      <param name="source">指定的颜色表文件路径。</param>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <param name="colourMode">指定的颜色模式。</param>
+      <returns>一个布尔值，如果成功返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.SetLineLookupFile(System.String,System.String)">
+      <summary>
+            设置线对象风格查找表文件路径。
+            </summary>
+      <param name="source">指定的风格查找表文件路径。</param>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <returns>一个布尔值，如果成功返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.SetPointLookupFile(System.String,System.String,System.Boolean)">
+      <summary>
+            设置点对象风格查找表文件路径。
+            </summary>
+      <param name="source">指定的风格查找表文件路径。</param>
+      <param name="displayStyleName">指定的显示风格名称。</param>
+      <param name="isSimplified">指定是否是简单点符号。如果为 false，则设置的是传统纸质海图点符号的查找表文件。</param>
+      <returns>一个布尔值，如果成功返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.ChartEnvironment.Dispose">
+      <summary>
+            释放 ChartEnvironment 所占有的本地资源。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartEnvironment.AgencyFile">
+      <summary>
+            获取或设置机构编码字典文件路径。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartEnvironment.S57AttributeFile">
+      <summary>
+            获取或设置 S-57 属性字典文件路径。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartEnvironment.S57ObjectFile">
+      <summary>
+            获取或设置 S-57 物标字典文件路径。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartEnvironment.S57SpecsInfoFile">
+      <summary>
+            获取或设置 S-57 产品规范基本信息文件路径。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartEnvironment.S57SpecsObjectFile">
+      <summary>
+            获取或设置 S-57 产品规范物标字典文件路径。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.AttributeS57">
+      <summary>
+            S-57 物标属性类。用于描述物标属性基本信息，包括属性的简称、名称等信息。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Acronym">
+      <summary>
+            获取属性的简称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Name">
+      <summary>
+            获取属性的名称。
+            </summary>
+      <value>默认值为String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.LocalName">
+      <summary>
+            获取属性的本地化名称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Definition">
+      <summary>
+            获取属性的定义。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.References">
+      <summary>
+            获取属性的参考信息。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Remarks">
+      <summary>
+            获取属性的备注信息。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.AttributeType">
+      <summary>
+            获取属性的类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Code">
+      <summary>
+            获取属性的代码。
+            </summary>
+      <value>默认值为0。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.SubSet">
+      <summary>
+            获取属性所属集合。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.AttributeExpectedInputs">
+      <summary>
+            获取 S-57 物标属性的期望输入集合。
+            </summary>
+      <value>默认值为空。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Format">
+      <summary>
+            获取属性的显示格式。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Indication">
+      <summary>
+            获取属性的指示信息。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeS57.Condition">
+      <summary>
+            获取使用该属性的限制条件。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.AttributeSpec">
+      <summary>
+            产品规范物标属性类。用于提供电子海图产品规范中物标的属性字段。例如，ENC 3.1 版本。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeSpec.Code">
+      <summary>
+            获取属性字段代码。
+            </summary>
+      <value>默认值为0。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeSpec.Required">
+      <summary>
+            获取该属性是否是物标的必须属性。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.DictionaryManagerChart">
+      <summary>
+            海图数据字典管理类。该类用于从相应的海图数据字典中读取生产机构、物标属性、物标信息即产品规范物标信息的集合，以及对产品规范基本信息文件和产品规范物标字典文件进行重新设置。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetAgencys">
+      <summary>
+            获取 S-57 生产机构 <see cref="T:SuperMap.Chart.AgencyS57">AgencyS57</see> 集合对象。已过时。使用 <see cref="M:SuperMap.Chart.DictionaryManagerChart.GetAgencyS57s">GetAgencyS57s</see> 替代。
+            </summary>
+      <returns>S-57 生产机构集合对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetAgencyS57s">
+      <summary>
+            获取 S-57 生产机构 <see cref="T:SuperMap.Chart.AgencyS57">AgencyS57</see> 集合对象。
+            </summary>
+      <returns>S-57 生产机构集合对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoS57s">
+      <summary>
+            获取 S-57 物标信息 <see cref="T:SuperMap.Chart.FeatureInfoS57">FeatureInfoS57</see> 集合对象。
+            </summary>
+      <returns>S-57 物标信息集合对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetAttributeS57s">
+      <summary>
+            获取 S-57 物标属性 <see cref="T:SuperMap.Chart.AttributeS57">AttributeS57</see> 集合对象。
+            </summary>
+      <returns>S-57 物标属性集合对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpecss">
+      <summary>
+             获取产品规范物标信息 <see cref="T:SuperMap.Chart.FeatureInfoSpecs">FeatureInfoSpecs</see> 集合对象。已过时。使用 <see cref="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpecs">GetFeatureInfoSpecs()</see> 替代。
+            </summary>
+      <returns>产品规范物标信息集合对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpecs">
+      <summary>
+             获取产品规范物标信息 <see cref="T:SuperMap.Chart.FeatureInfoSpec">FeatureInfoSpec</see> 集合对象。
+            </summary>
+      <returns>产品规范物标信息集合对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetAgencyS57(System.Int32)">
+      <summary>
+            根据给定的机构编码获取 S-57 生产机构 <see cref="T:SuperMap.Chart.AgencyS57">AgencyS57</see>对象。
+            </summary>
+      <param name="nCode">指定的机构编码。</param>
+      <returns>S-57 生产机构对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetAgencyS57(System.String)">
+      <summary>
+            根据给定的机构缩写获取生产机构 <see cref="T:SuperMap.Chart.AgencyS57">AgencyS57</see> 对象。
+            </summary>
+      <param name="token">指定的机构缩写。</param>
+      <returns>S-57 生产机构对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoS57(System.Int32)">
+      <summary>
+            根据给定的物标ID获取 S-57 物标信息 <see cref="T:SuperMap.Chart.FeatureInfoS57">FeatureInfoS57</see> 对象。
+            </summary>
+      <param name="nCode">指定的物标代码。</param>
+      <returns>S-57 物标信息对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoS57(System.String)">
+      <summary>
+            据给定的物标简称获取 S-57 物标信息 <see cref="T:SuperMap.Chart.FeatureInfoS57">FeatureInfoS57</see> 对象。
+            </summary>
+      <param name="acronym">指定的物标简称。</param>
+      <returns>S-57 物标信息对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetAttributeS57(System.Int32)">
+      <summary>
+            据给定的物标属性代码获取 S-57 物标属性 <see cref="T:SuperMap.Chart.AttributeS57">AttributeS57</see> 对象。
+            </summary>
+      <param name="nCode">指定的物标属性的代码。</param>
+      <returns>S-57 物标属性对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetAttributeS57(System.String)">
+      <summary>
+            根据给定的物标属性的简称获取 S-57 物标属性 <see cref="T:SuperMap.Chart.AttributeS57">AttributeS57</see> 对象。
+            </summary>
+      <param name="acronym">指定的物标属性的简称。</param>
+      <returns>S-57 物标属性对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpecs(System.Int32)">
+      <summary>
+            根据给定的物标代码获取产品规范物标信息<see cref="T:SuperMap.Chart.FeatureInfoSpecs">FeatureInfoSpecs</see> 对象。已过时。使用 <see cref="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpec(System.Int32)">GetFeatureInfoSpec(Int32)</see> 替代。
+            </summary>
+      <param name="nCode">指定的物标代码。</param>
+      <returns>产品规范物标信息对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpecs(System.String)">
+      <summary>
+            根据给定的物标简称获取产品规范物标信息<see cref="T:SuperMap.Chart.FeatureInfoSpecs">FeatureInfoSpecs</see> 对象。已过时。使用 <see cref="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpec(System.String)">GetFeatureInfoSpec(String)</see> 替代。
+            </summary>
+      <param name="acronym">指定的物标简称。</param>
+      <returns>产品规范物标信息对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpec(System.Int32)">
+      <summary>
+            根据给定的物标代码获取产品规范物标信息<see cref="T:SuperMap.Chart.FeatureInfoSpec">FeatureInfoSpec</see> 对象。
+            </summary>
+      <param name="nCode">指定的物标代码。</param>
+      <returns>产品规范物标信息对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.GetFeatureInfoSpec(System.String)">
+      <summary>
+            根据给定的物标简称获取产品规范物标信息<see cref="T:SuperMap.Chart.FeatureInfoSpec">FeatureInfoSpec</see> 对象。
+            </summary>
+      <param name="acronym">指定的物标简称。</param>
+      <returns>产品规范物标信息对象。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.ResetS57SpecsObjectsFile">
+      <summary>
+            重新设置产品规范物标字典文件。已过时。使用 <see cref="M:SuperMap.Chart.DictionaryManagerChart.ResetS57SpecObjectsFile">ResetS57SpecObjectsFile</see> 替代。
+            </summary>
+      <returns>一个 Boolean 值，用于判断重新设置是否成功，如果重新设置成功，返回true，否则，返回false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.ResetS57SpecsInfosFile">
+      <summary>
+            重新设置产品规范基本信息文件。已过时。使用 <see cref="M:SuperMap.Chart.DictionaryManagerChart.ResetS57SpecInfosFile">ResetS57SpecInfosFile</see> 替代。
+            </summary>
+      <returns>一个 Boolean 值，用于判断重新设置是否成功，如果重新设置成功，返回true，否则，返回false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.ResetS57SpecObjectsFile">
+      <summary>
+            重新设置产品规范物标字典文件。
+            </summary>
+      <returns>一个 Boolean 值，用于判断重新设置是否成功，如果重新设置成功，返回true，否则，返回false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.DictionaryManagerChart.ResetS57SpecInfosFile">
+      <summary>
+            重新设置产品规范基本信息文件。
+            </summary>
+      <returns>一个 Boolean 值，用于判断重新设置是否成功，如果重新设置成功，返回true，否则，返回false。</returns>
+    </member>
+    <member name="T:SuperMap.Chart.ChartQuery">
+      <summary>
+            海图查询类。该类用于根据查询参数查询一个或多个海图数据集分组的记录，并且可以设置查询的空间范围。查询参数通过海图查询参数（<see cref="T:SuperMap.Chart.ChartQueryParameter">ChartQueryParameter</see>）类设置，包括查询哪些类型的物标、查询的过滤条件以及产品规范物标信息。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.ChartQuery.Query(SuperMap.Data.DatasetGroup[],SuperMap.Chart.ChartQueryParameter[],SuperMap.Data.CursorType)">
+      <summary>
+            查询一个或多个海图数据集分组中符合指定的查询参数的记录。
+            </summary>
+      <param name="datasetGroups">指定的海图数据集分组数组。至少包含一个数据集分组。</param>
+      <param name="queryParameters">指定的查询参数数组。至少包含一个查询参数对象。</param>
+      <param name="cursorType">指定的游标类型。当游标类型为动态时，记录集可以被修改，当游标类型为静态时，记录集为只读。</param>
+      <returns>海图查询结果数组。</returns>
+      <exception cref="T:System.ArgumentException">datasetGroups 的长度为 0，或 queryParameters 的长度为 0。</exception>
+    </member>
+    <member name="M:SuperMap.Chart.ChartQuery.Query(SuperMap.Data.DatasetGroup[],SuperMap.Data.Rectangle2D,SuperMap.Chart.ChartQueryParameter[],SuperMap.Data.CursorType)">
+      <summary>
+            在指定的空间范围内，查询一个或多个海图数据集分组中符合指定的查询参数的记录。
+            </summary>
+      <param name="datasetGroups">指定的海图数据集分组数组。至少包含一个数据集分组。</param>
+      <param name="bounds">指定的空间范围。</param>
+      <param name="queryParameters">指定的查询参数数组。至少包含一个查询参数对象。</param>
+      <param name="cursorType">指定的游标类型。当游标类型为动态时，记录集可以被修改，当游标类型为静态时，记录集为只读。</param>
+      <returns>海图查询结果数组。</returns>
+      <exception cref="T:System.ArgumentException">datasetGroups 的长度为 0，或 queryParameters 的长度为 0。</exception>
+    </member>
+    <member name="T:SuperMap.Chart.ChartDisplayStyleType">
+      <summary>
+            该枚举定义了海图显示风格类型常量。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.ChartDisplayStyleType.NONE">
+      <summary>
+            未知类型。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.ChartDisplayStyleType.ENC">
+      <summary>
+            电子海图类型。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.ChartDisplayStyleType.PAPERCHART">
+      <summary>
+            纸质海图类型。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.AttributeTypeChart">
+      <summary>
+            该类定义了海图属性类型常量。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.AttributeTypeChart.None">
+      <summary>
+            未知类型。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.AttributeTypeChart.Enumerated">
+      <summary>
+            枚举型（缩写为'E'）。表示期望输入值从 S-57 物标属性的期望输入 <see cref="T:SuperMap.Chart.AttributeExpectedInputsS57"> AttributeExpectedInputsS57</see> 集合中选择，且必须选择一个正确的值。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.AttributeTypeChart.List">
+      <summary>
+            列表型（缩写为'L'）。表示期望输入是从 S-57 物标属性的期望输入 <see cref="T:SuperMap.Chart.AttributeExpectedInputsS57"> AttributeExpectedInputsS57</see> 集合中选出的一个或多个值。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.AttributeTypeChart.Float">
+      <summary>
+            浮点型（缩写为'F'）。表示期望输入是具有限定范围、分辨率、单位和格式的浮点数值。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.AttributeTypeChart.Integer">
+      <summary>
+            整数型（缩写为'I'）。表示期望输入是具有限定范围、单位和格式的整数值。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.AttributeTypeChart.CodedString">
+      <summary>
+            编码字符串（缩写为'A'）。表示期望输入是在指定格式中的 ASCII 字符串。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.AttributeTypeChart.FreeText">
+      <summary>
+            任意字符串（缩写为'S'）。表示期望输入是自由格式字母数字混合字符串。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ExportSettingChart">
+      <summary>
+            海图数据导出设置信息类。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingChart.#ctor">
+      <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.ExportSettingChart"> ExportSettingChart </see> 对象。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportSettingChart.TargetFilePath">
+      <summary>
+            获取或设置导出目标文件的路径信息。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportSettingChart.IsOverwrite">
+      <summary>
+            获取或设置导出目录中存在同名文件时，是否强制覆盖。
+            </summary>
+      <value>默认值为 false，即不执行导出操作，否则强制覆盖。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportSettingChart.TargetFileType">
+      <summary>
+            获取或设置需要导出的海图数据类型。
+            </summary>
+      <value>默认值为 FileTypeChart.None。</value>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.DataImportChart">
+      <summary>
+             海图数据导入类。通过该类可以将海图数据（000等格式文件）导入为 SuperMap 所支持海图数据集分组内。
+             </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.DataImportChart.#ctor">
+      <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.DataImportChart">DataImportChart</see> 对象。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.DataImportChart.Run">
+      <summary>
+            执行导入海图文件的操作，返回海图数据导入结果<see cref="T:SuperMap.Chart.Conversion.ImportResultChart"> ImportResultChart </see>。
+            </summary>
+      <returns>海图数据导入结果，包含成功和失败的任务对应的 <see cref="T:SuperMap.Chart.Conversion.ImportSettingChart">ImportSettingChart</see> 集合。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.DataImportChart.Finalize">
+      <summary>
+            在通过垃圾回收将 DataImportChart 回收之前，释放非托管资源并执行其他清理操作。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.DataImportChart.Dispose">
+      <summary>
+            释放对象所占用的资源。
+            </summary>
+    </member>
+    <member name="E:SuperMap.Chart.Conversion.DataImportChart.Stepped">
+      <summary>
+            启动进度条时触发该事件。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.DataImportChart.ImportSettingCharts">
+      <summary>
+            获取或设置<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see>对象，通过该属性可以完成多个导入任务的设置。
+            </summary>
+      <value>默认值为一个<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see>对象，该对象用来存储<see cref="T:SuperMap.Chart.Conversion.ImportSettingChart"> ImportSettingChart </see>对象，默认的<see cref="T:SuperMap.Chart.Conversion.ImportSettingChart"> ImportSettingChart </see>对象个数为0。</value>
+    </member>
+    <member name="T:SuperMap.Chart.AttributeSpecs">
+      <summary>
+            产品规范物标属性类。用于提供电子海图产品规范中物标的属性字段。例如，ENC 3.1 版本。已过时。使用 <see cref="T:SuperMap.Chart.AttributeSpec">AttributeSpec</see> 替代。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeSpecs.Code">
+      <summary>
+            获取属性字段代码。
+            </summary>
+      <value>默认值为0。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeSpecs.Required">
+      <summary>
+            获取该属性是否是物标的必须属性。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ExportSettingCharts">
+      <summary>
+             海图数据导出设置信息集合类。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingCharts.Add(SuperMap.Chart.Conversion.ExportSettingChart)">
+      <summary>
+            将指定的海图数据导出设置信息对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingChart"> ExportSettingChart </see>）添加到对象海图数据导出设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts </see>）中。
+            </summary>
+      <param name="exportSetting">指定的海图数据导出设置信息对象。</param>
+      <returns>新添加的海图数据导出设置信息对象所对应的索引值。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingCharts.Insert(System.Int32,SuperMap.Chart.Conversion.ExportSettingChart)">
+      <summary>
+            在海图数据导出设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts </see>）的指定索引处插入指定的海图数据导出设置信息对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingChart"> ExportSettingChart</see>）。
+            </summary>
+      <param name="index">指定的索引值。</param>
+      <param name="exportSetting">指定的海图数据导出设置信息对象。</param>
+      <returns>一个布尔值，表示插入是否成功，如果插入成功，返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingCharts.Remove(System.Int32)">
+      <summary>
+            从海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts</see>）中移除指定索引处的项。
+            </summary>
+      <param name="index">指定的索引值。</param>
+      <returns>一个布尔值，表示移除是否成功，如果插入成功，返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingCharts.Clear">
+      <summary>
+            从海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts </see>）中移除全部项。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingCharts.GetEnumerator">
+      <summary>
+             获取一个循环访问集合的枚举数。
+            </summary>
+      <returns>数据集集合中的枚举数。</returns>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportSettingCharts.Count">
+      <summary>
+            获取给定的数据导出设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts </see>）中元素的总数。
+            </summary>
+      <returns>给定的数据导出设置信息集合对象中元素的个数。</returns>
+      <value>默认值为0。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportSettingCharts.Item(System.Int32)">
+      <summary>
+            根据给定的索引值 index 获取海图数据导出设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts </see>）中的海图数据导出设置信息对象（<see cref="T:SuperMap.Chart.Conversion.ExportSettingChart"> ExportSettingChart</see>）。
+            </summary>
+      <param name="index">指定的索引值。index必须大于等0且小于Count，否则抛出异常。</param>
+      <returns>指定索引值对应的海图数据导出设置信息对象。</returns>
+    </member>
+    <member name="T:SuperMap.Chart.ChartQueryParameter">
+      <summary>
+            海图查询参数类。该类用于设置海图查询（详见 <see cref="T:SuperMap.Chart.ChartQuery">ChartQuery</see> 类）的查询参数，包括是否查询点（线、面）物标，设置查询过滤条件以及产品规范物标信息。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.ChartQueryParameter.#ctor">
+      <summary>
+            构造一个新的 ChartQueryParameter 对象。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartQueryParameter.FeatureInfo">
+      <summary>
+            获取或设置产品规范物标信息。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartQueryParameter.IsQueryPoint">
+      <summary>
+            获取或设置是否查询点物标。设置为 true，则查询点物标，否则不查询。
+            </summary>
+      <value>默认值为 true。</value>
+    </member>
+    <member name="P:SuperMap.Chart.ChartQueryParameter.IsQueryLine">
+      <summary>
+            获取或设置是否查询线物标。
+            </summary>
+      <value>默认值为 true。</value>
+    </member>
+    <member name="P:SuperMap.Chart.ChartQueryParameter.IsQueryRegion">
+      <summary>
+            获取或设置是否查询面物标。
+            </summary>
+      <value>默认值为 true。</value>
+    </member>
+    <member name="P:SuperMap.Chart.ChartQueryParameter.AttributeFilter">
+      <summary>
+            获取或设置查询过滤条件。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="T:SuperMap.Chart.FeatureInfoSpecs">
+      <summary>
+            产品规范物标信息类。用于描述各产品规范的物标的基本信息，包括物标的名称、类型及与该物标相关的属性等。例如，ENC 3.1 版本。已过时。使用 <see cref="T:SuperMap.Chart.FeatureInfoSpec">FeatureInfoSpec</see> 替代。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpecs.Acronym">
+      <summary>
+            获取物标简称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpecs.Name">
+      <summary>
+            获取物标名称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpecs.LocalName">
+      <summary>
+            获取物标本地化名称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpecs.Code">
+      <summary>
+            获取物标代码。
+            </summary>
+      <value>默认值为0。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpecs.Primitive">
+      <summary>
+            获取物标可应用的对象类型。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoSpecs.AttributeFields">
+      <summary>
+            获取物标的属性集合。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ExportSettingChartS57">
+      <summary>
+            S-57 格式海图数据导出信息设置类。该类继承自 <see cref="T:SuperMap.Chart.Conversion.ExportSettingChart"> ExportSettingChart </see> 类。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingChartS57.#ctor">
+      <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.ExportSettingChartS57">ExportSettingChartS57</see> 对象。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingChartS57.#ctor(SuperMap.Chart.Conversion.ExportSettingChartS57)">
+      <summary>
+            根据给定的 <see cref="T:SuperMap.Chart.Conversion.ExportSettingChartS57">ExportSettingChartS57</see> 对象构造一个与其完全相同的新对象。
+            </summary>
+      <param name="exportSettingChartS57">指定的 S-57 格式海图数据导出信息设置对象。</param>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportSettingChartS57.#ctor(SuperMap.Data.DatasetGroup,System.String)">
+      <summary>
+            根据给定的参数构造一个新的 <see cref="T:SuperMap.Chart.Conversion.ExportSettingChartS57">ExportSettingChartS57</see> 对象。
+            </summary>
+      <param name="sourceData">指定的被导出的数据集对象。</param>
+      <param name="targetFilePath">指定的被导出的目标文件的路径。</param>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportSettingChartS57.SourceData">
+      <summary>
+            设置或获取需要导出整个海图数据集组对象。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportSettingChartS57.TargetFileType">
+      <summary>
+            获取或设置需要导出的海图数据类型。
+            </summary>
+      <value>默认值为<see cref="F:SuperMap.Chart.Conversion.FileTypeChart.S57">FileTypeChart.S57</see>。</value>
+    </member>
+    <member name="T:SuperMap.Chart.S57DatasetType">
+      <summary>
+            该类定义了导入的海图数据的数据集类型常量。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.NONE">
+      <summary>
+            非海图数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57FEATURE">
+      <summary>
+            特征物标数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57DSID">
+      <summary>
+            存放S57文件中 DSID 和 DSPM 字段的数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57VI">
+      <summary>
+            存放空间孤立点的数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57VC">
+      <summary>
+            存放空间链接节点的数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57VE">
+      <summary>
+            存放空间边界线的数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57FVE">
+      <summary>
+            存放特征物标对象到空间边界线对象空间拓扑关系的数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57FVP">
+      <summary>
+            存放特征物标对象到空间点(孤立点和链接节点)对象空间拓扑关系的数据集。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.S57DatasetType.S57RS">
+      <summary>
+            存放特征物标对象之间的关联关系数据集。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.S57DatasetExtInfo">
+      <summary>
+            海图数据集扩展信息类。通过该类可以获取数据集的扩展信息，包括 S-57 数据集类型、S-57 特征物标的物标简称、编码以及数据集所关联的属性数据集等。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetExtInfo.#ctor(SuperMap.Data.Dataset)">
+      <summary>
+            根据指定的参数来构造一个 S57DatasetExtInfo 的新对象。 
+             </summary>
+      <param name="dataset">指定的 Dataset 对象。</param>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetExtInfo.Dispose">
+      <summary>
+             释放 S57DatasetExtInfo 所占有的本地资源。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetExtInfo.Finalize">
+      <summary>
+             在通过垃圾回收将 S57DatasetExtInfo 回收之前，释放非托管资源并执行其他清理操作。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetExtInfo.Update">
+      <summary>
+            将扩展信息写入数据集中。
+            </summary>
+      <returns>一个布尔值，表示更新是否成功，如果更新成功，返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetExtInfo.IsChartDataset">
+      <summary>
+            通过扩展信息判断是否为海图数据集。
+            </summary>
+      <returns>一个布尔值，表示是否为海图数据集，是海图数据集则返回true，否则返回 false;</returns>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetExtInfo.Dataset">
+      <summary>
+            获取或设置数据集。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetExtInfo.S57DatasetType">
+      <summary>
+            获取或设置 S-57数据集类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetExtInfo.FeatureAcronym">
+      <summary>
+            获取或设置 S-57 特征物标的物标简称。仅对 <see cref="F:SuperMap.Chart.S57DatasetType.S57FEATURE"> S57DatasetType.S57FEATURE </see>类型的海图数据集有效。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetExtInfo.FeatureCode">
+      <summary>
+            获取或设置 S-57 特征物标的物标编码。仅对 <see cref="F:SuperMap.Chart.S57DatasetType.S57FEATURE"> S57DatasetType.S57FEATURE </see> 类型的海图数据集有效。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ImportSettingCharts">
+      <summary>
+            海图数据导入设置信息集合类。该类是海图数据导入设置信息对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingChart"> ImportSettingChart</see>）的集合。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingCharts.#ctor">
+      <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see> 对象。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingCharts.Add(SuperMap.Chart.Conversion.ImportSettingChart)">
+      <summary>
+            在海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see>）中添加一个指定的（<see cref="T:SuperMap.Chart.Conversion.ImportSettingChart"> ImportSettingChart</see> 对象）。
+            </summary>
+      <param name="importSettingChart">指定的海图数据导入设置信息对象。</param>
+      <returns>新添加的海图数据导入设置信息对象所对应的索引值。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingCharts.Insert(System.Int32,SuperMap.Chart.Conversion.ImportSettingChart)">
+      <summary>
+            在海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see>） 的指定索引处插入指定的海图数据导入设置信息对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingChart"> ImportSettingChart</see>）。
+            </summary>
+      <param name="index">指定的索引值。</param>
+      <param name="importSettingChart">指定的海图数据导入设置信息对象。</param>
+      <returns>一个布尔值，表示插入是否成功，如果插入成功，返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingCharts.Remove(System.Int32)">
+      <summary>
+            从海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts</see>）中移除指定索引处的项。
+            </summary>
+      <param name="index">指定的索引值。</param>
+      <returns>一个布尔值，表示移除是否成功，如果移除成功，返回 true，否则返回 false。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingCharts.Clear">
+      <summary>
+            从海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see>）中移除全部项。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ImportSettingCharts.GetEnumerator">
+      <summary>
+            获取一个循环访问集合的枚举数。
+            </summary>
+      <returns>数据集集合中的枚举数。</returns>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingCharts.Count">
+      <summary>
+            获取给定的海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see>）中元素的总数。
+            </summary>
+      <returns>给定的数据导入设置信息集合对象中元素的个数。</returns>
+      <value>默认值为0。</value>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ImportSettingCharts.Item(System.Int32)">
+      <summary>
+            根据给定的索引值 index 获取海图数据导入设置信息集合对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingCharts"> ImportSettingCharts </see>）中的海图数据导入设置信息对象（<see cref="T:SuperMap.Chart.Conversion.ImportSettingChart"> ImportSettingChart</see>）。
+            </summary>
+      <param name="index">给定的索引值。</param>
+      <returns>给定的索引处所对应的海图数据导入设置信息对象。</returns>
+    </member>
+    <member name="T:SuperMap.Chart.AttributeExpectedInputsS57">
+      <summary>
+            S-57 物标属性的期望输入类。用于表示 S-57 物标属性的期望输入的属性值的相关信息，包括期望输入的属性的ID、含义、定义及参考信息。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeExpectedInputsS57.ID">
+      <summary>
+            获取期望输入的属性值的 ID。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeExpectedInputsS57.Meaning">
+      <summary>
+            获取期望输入的属性值的含义。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeExpectedInputsS57.Definition">
+      <summary>
+            获取期望输入的属性值的定义。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AttributeExpectedInputsS57.References">
+      <summary>
+            获取期望输入的属性值的参考信息。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.S57DatasetGroupExtInfo">
+      <summary>
+            海图数据集分组扩展信息管理类。通过该类可以获取数据集分组的扩展信息，包括海图的文件名、默认比例尺、空间孤立节点数据集、空间链接节点数据集等信息。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.#ctor(SuperMap.Data.DatasetGroup)">
+      <summary>
+            根据指定的参数来构造一个 S57DatasetGroupExtInfo 的新对象。 
+             </summary>
+      <param name="datasetGroup">指定的 DatasetGroup 对象。</param>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.Dispose">
+      <summary>
+             释放 S57DatasetGroupExtInfo 所占有的本地资源。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.Finalize">
+      <summary>
+             在通过垃圾回收将 S57DatasetGroupExtInfo 回收之前，释放非托管资源并执行其他清理操作。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.Update">
+      <summary>
+            执行将扩展信息写入数据集分组中，将需要写入的相关信息设置后再调用这个接口，不调用此接口将无法将设置的信息写入的数据集分组中。 
+            </summary>
+      <returns>一个布尔值，表示是否更新是否成功，true表示更新成功，false表示更新失败。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.IsChartDatasetGroup">
+      <summary>
+            由扩展信息判断是否是海图数据集分组。
+            </summary>
+      <returns>一个布尔值，表示是否是海图数据集分组，true表示是海图数据集分组，false表示不是海图数据集分组。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.GetFeatureDataset(System.Int32,SuperMap.Data.DatasetType)">
+      <summary>
+            根据制定的物标编码值和数据集类型（物标几何类型）获取特征物标数据集。数据集类型有<see cref="F:SuperMap.Data.DatasetType.Point">Point</see>,<see cref="F:SuperMap.Data.DatasetType.Line"> Line</see>, <see cref="F:SuperMap.Data.DatasetType.Region">Region</see>, <see cref="F:SuperMap.Data.DatasetType.Tabular">Tabular</see>。
+            </summary>
+      <param name="code">指定的物标编码</param>
+      <param name="eType">指定的数据集类型。</param>
+      <returns>特征物标数据集。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.SetFeatureDataset(SuperMap.Data.Dataset)">
+      <summary>
+            设置特征物标数据集。
+            <para>设置的数据集要求已经设置海图的数据集扩展信息。如果当前数据集组中已经含有了相同数据集类型的数据集，则设置失败。因为同一类特征物标有多种几何类型，所以，在一个海图数据集分组中一种特征物标含有多个不同数据集类型的数据集，且每种类型数据集只能存在一个。</para></summary>
+      <param name="dataset">
+      </param>
+      <returns>一个布尔值，表示设置特征物标数据集是否成功。true表示设置成功，false表示没有设置成功。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.S57DatasetGroupExtInfo.DeleteFeature(System.Int32,SuperMap.Data.DatasetType)">
+      <summary>
+             删除指定物标编码和指定数据集类型（物标几何类型）的物标数据集。
+            </summary>
+      <param name="code">指定的物标编码。</param>
+      <param name="eType">指定的数据集类型。</param>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.DatasetGroup">
+      <summary>
+            获取或设置数据集分组。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.ChartCellName">
+      <summary>
+             获取或设置海图的文件名，此文件名存在于DSNM字段中。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.ChartScale">
+      <summary>
+            获取或设置海图的默认比例尺。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.PrjCoordSys">
+      <summary>
+            获取或设置海图坐标系。支持WGS1984和投影坐标系World Mercator两种空间坐标系。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.DSIDDataset">
+      <summary>
+            获取或设置DSID数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57DSID">S57DSID</see>类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.VectorIsolatedDataset">
+      <summary>
+            获取或设置空间孤立节点数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57VI">S57VI</see>类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.VectorConnectedDataset">
+      <summary>
+             获取或设置空间链接节点数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57VC">S57VC</see>类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.VectorEdgeDataset">
+      <summary>
+            获取或设置空间边界线数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57VE">S57VE</see>类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.FeatureToEdgeDataset">
+      <summary>
+            获取或设置存储特征物标到空间边界线的拓扑关系的数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57FVE">S57FVE</see>类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.FeatureToPointDataset">
+      <summary>
+             获取或设置存储特征物标到空间点(包含孤立节点和链接节点)的拓扑关系的数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57FVP">S57FVP</see>类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.FeatureRelationShipDataset">
+      <summary>
+             获取或设置存储特征物标之前关联关系的数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57RS">S57RS</see>类型。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.S57DatasetGroupExtInfo.FeatureDatasets">
+      <summary>
+             获取或设置当前图幅下所有物标数据集。支持<see cref="T:SuperMap.Chart.S57DatasetType">S57DatasetType</see>中的<see cref="F:SuperMap.Chart.S57DatasetType.S57FEATURE">S57FEATURE</see>类型。
+             </summary>
+    </member>
+    <member name="T:SuperMap.Chart.ChartQueryResult">
+      <summary>
+            海图查询结果类。该类用于获取海图查询（详见 <see cref="T:SuperMap.Chart.ChartQuery">ChartQuery</see> 类）的结果，包括数据集名称及对应的查询结果记录集数组。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartQueryResult.DatasetGroupName">
+      <summary>
+            获取海图查询结果中的数据集分组的名称。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.ChartQueryResult.Recordsets">
+      <summary>
+            获取海图查询结果记录集数组。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.DataExportChart">
+      <summary>
+        <para>海图数据导出类。通过该类可以将数据导出为标准海图数据（*.000等格式文件）。 </para>
+      </summary>
+             /// <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.DataExportChart">DataExportChart</see> 对象。
+            </summary></member>
+    <member name="M:SuperMap.Chart.Conversion.DataExportChart.#ctor">
+      <summary>
+            构造一个新的 <see cref="T:SuperMap.Chart.Conversion.DataExportChart">DataExportChart</see> 对象。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.DataExportChart.Run">
+      <summary>
+            执行导出数据集的操作，返回海图数据导出结果<see cref="T:SuperMap.Chart.Conversion.ExportResultChart"> ExportResultChart </see>。
+            </summary>
+      <returns>数据集导出结果，包含成功和失败的任务对应的<see cref="T:SuperMap.Chart.Conversion.ExportSettingChart">ExportSettingChart</see> 集合。</returns>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.DataExportChart.Finalize">
+      <summary>
+            在通过垃圾回收将 DataExportChart 回收之前，释放非托管资源并执行其他清理操作。
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.DataExportChart.Dispose">
+      <summary>
+            释放对象所占用的资源。
+            </summary>
+    </member>
+    <member name="E:SuperMap.Chart.Conversion.DataExportChart.Stepped">
+      <summary>
+            启动进度条时触发该事件。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.DataExportChart.ExportSettingCharts">
+      <summary>
+            获取或设置<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts </see>对象，通过该属性可以完成多个导出任务的设置。
+            </summary>
+      <value>默认值为一个<see cref="T:SuperMap.Chart.Conversion.ExportSettingCharts"> ExportSettingCharts </see>对象，该对象用来存储<see cref="T:SuperMap.Chart.Conversion.ExportSettingChart"> ExportSettingChart </see>对象，默认的<see cref="T:SuperMap.Chart.Conversion.ExportSettingChart"> ExportSettingChart </see>对象个数为0。</value>
+    </member>
+    <member name="T:SuperMap.Chart.ColourModeChart">
+      <summary>
+            该枚举定义了海图颜色模式类型常量。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.ColourModeChart.DayBright">
+      <summary>
+            白昼模式。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.ColourModeChart.Dusk">
+      <summary>
+            晨昏模式。
+            </summary>
+    </member>
+    <member name="F:SuperMap.Chart.ColourModeChart.Night">
+      <summary>
+            夜晚模式。
+            </summary>
+    </member>
+    <member name="T:SuperMap.Chart.AgencyS57">
+      <summary>
+            S-57 生产机构类。提供生产 S-57 格式数据的机构的相关信息，包括机构的简写、编码及名称。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.AgencyS57.Token">
+      <summary>
+            获取机构缩写。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AgencyS57.Code">
+      <summary>
+            获取机构编码。
+            </summary>
+      <value>默认值为 -1。</value>
+    </member>
+    <member name="P:SuperMap.Chart.AgencyS57.AgencyName">
+      <summary>
+            获取机构名称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ImportChartSteppedEventHandler">
+      <summary>
+            表示处理导入进度条相关事件的方法类。sender 是  <see cref="T:SuperMap.Chart.Conversion.DataImportChart"> DataImportChart</see> 本身, <see cref="T:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs"> ImportChartSteppedEventArgs</see>  从 EventArgs 继承，对应的委托是 <see cref="T:SuperMap.Chart.Conversion.ImportChartSteppedEventHandler">ImportChartSteppedEventHandler</see>。
+            </summary>
+      <param name="sender">指定的源事件。</param>
+      <param name="e">包含事件数据的转换进度条事件参数类（<see cref="T:SuperMap.Chart.Conversion.ImportChartSteppedEventArgs"> ImportChartSteppedEventArgs</see> ）。</param>
+    </member>
+    <member name="T:SuperMap.Chart.FeatureInfoS57">
+      <summary>
+            S-57 物标信息类。 用于表示 S-57 物标的基本信息，包括物标的简称、完整名称、类型及其他相关信息。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoS57.Acronym">
+      <summary>
+            获取物标简称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoS57.Name">
+      <summary>
+            获取物标的名称。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoS57.Definition">
+      <summary>
+            获取物标的定义。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoS57.References">
+      <summary>
+            获取物标引用信息。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoS57.Remarks">
+      <summary>
+            获取物标备注信息。
+            </summary>
+      <value>默认值为 String.Empty。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoS57.FeatureType">
+      <summary>
+            获取物标类型。
+            </summary>
+      <value>默认值为<see cref="F:SuperMap.Chart.FeatureTypeChart.None"> FeatureTypeChart.None </see>。</value>
+    </member>
+    <member name="P:SuperMap.Chart.FeatureInfoS57.Code">
+      <summary>
+            获取物标代码。
+            </summary>
+      <value>默认值为0。</value>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ExportChartSteppedEventHandler">
+      <summary>
+            表示处理导出进度条相关事件的方法类。sender 是  <see cref="T:SuperMap.Chart.Conversion.DataExportChart"> DataExportChart</see> 本身, <see cref="T:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs"> ExportChartSteppedEventArgs</see>  从 EventArgs 继承，对应的委托是 <see cref="T:SuperMap.Chart.Conversion.ExportChartSteppedEventHandler"> ExportChartSteppedEventHandler</see> 。
+            </summary>
+      <param name="sender">指定的源事件。</param>
+      <param name="e">包含事件数据的转换进度条事件参数类（<see cref="T:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs"> ExportChartSteppedEventArgs</see> ）。</param>
+    </member>
+    <member name="T:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs">
+      <summary>
+            转换进度条事件参数类。为导出海图数据进度条相关事件提供数据。 
+            </summary>
+    </member>
+    <member name="M:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.#ctor(System.String,System.String,System.Int32,System.Int32,SuperMap.Chart.Conversion.ExportSettingChart,System.Int32,System.Boolean)">
+      <summary>
+            根据给定参数对象初始化 <see cref="T:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs" /> 类的新实例。
+            </summary>
+      <param name="title">当前进度条的标题。</param>
+      <param name="message">当前进度条的进度信息。</param>
+      <param name="percent">当前操作完成的百分比。</param>
+      <param name="subPercent">当前进行的子操作完成的百分比。</param>
+      <param name="currentTask">当前进行的子操作信息。</param>
+      <param name="count">进行的任务的子项个数。</param>
+      <param name="cancel">是否取消所有任务。</param>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.TotalPercent">
+      <summary>
+            获取当前的完成的总百分比
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.SubPercent">
+      <summary>
+            获取当前进行的子项完成的百分比。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.CurrentTask">
+      <summary>
+            获取当前进行的子项信息,直接返回传入的Setting。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.Count">
+      <summary>
+            获取进行的任务的子项个数。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.Cancel">
+      <summary>
+            获取和设置是否取消所有任务。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.Title">
+      <summary>
+            获取当前进度条的标题。
+            </summary>
+    </member>
+    <member name="P:SuperMap.Chart.Conversion.ExportChartSteppedEventArgs.Message">
+      <summary>
+            获取当前进度条的进度信息。
+            </summary>
+    </member>
+  </members>
+</doc>
