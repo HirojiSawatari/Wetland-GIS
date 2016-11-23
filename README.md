@@ -9,7 +9,7 @@ This is the main page of this system.
 
 Before open the system, users should login the administrator account.
 
-<img src='mdimage/image02.png' height='400px'/>
+<img src='mdimage/image02.png' height='300px'/>
 
 We can open the geodatabase of Liaodong Bay and show maps in this system. 
 
