@@ -33,23 +33,23 @@ namespace 湿地GIS
 
         private void buttonX2_Click(object sender, EventArgs e)
         {
-            string user,pass;
-            OleDbConnection conn = null;
-            OleDbDataReader rdr = null;
-            try
+            //cls,2018/3/14
+            string user = textBoxX1.Text.Trim();
+            string pass = textBoxX2.Text.Trim();
+            if (textBoxX1.Text == string.Empty || textBoxX2.Text == string.Empty)
             {
-                conn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=LNNU_GIS.mdb ;");
-                conn.Open();
-                user = textBoxX1.Text.Trim();
-                pass = textBoxX2.Text.Trim();
-                OleDbCommand cmd = new OleDbCommand("Select pass FROM userid where user= '" + user + "' ", conn);
-                rdr = cmd.ExecuteReader();
-                if (textBoxX1.Text == string.Empty || textBoxX2.Text == string.Empty)
+                MessageBox.Show(this, "输入信息不完整，请重新输入！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                OleDbConnection conn = null;
+                OleDbDataReader rdr = null;
+                try
                 {
-                    MessageBox.Show(this, "输入信息不完整，请重新输入！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
+                    conn = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=LNNU_GIS.mdb ;");
+                    conn.Open();
+                    OleDbCommand cmd = new OleDbCommand("Select pass FROM userid where user= '" + user + "' ", conn);
+                    rdr = cmd.ExecuteReader();
                     if (rdr.Read())
                     {
                         string a = rdr["pass"].ToString();
@@ -69,11 +69,17 @@ namespace 湿地GIS
                         MessageBox.Show(this, "此用户不存在，请重新输入！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-            }
-            finally
-            {
-                if (rdr != null) rdr.Close();
-                if (conn != null) conn.Close();
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    if (rdr != null)
+                        rdr.Close();
+                    if (conn != null)
+                        conn.Close();
+                }
             }
         }
     }
